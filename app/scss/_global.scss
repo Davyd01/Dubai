@@ -1,0 +1,25 @@
+
+body {
+  font-family: 'Work Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.wrapper {
+  background: $main-bg;
+  min-height: 100vh;
+  color: $main-color;
+}
+
+.container {
+  padding: 0 30px;
+  // max-width: 345px;
+  margin: 0 auto;
+  @media (min-width: $breakpoint-md) {
+    max-width: 754px;
+  }
+  @media (min-width: $breakpoint-xxl) {
+    max-width: 1862px;
+  }
+}

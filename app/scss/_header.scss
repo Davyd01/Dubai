@@ -1,0 +1,157 @@
+.header {
+  padding-top: 30px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__titles {
+    padding: 5px 0 5px 10px;
+    position: relative;
+    // background: rgb(164, 164, 156);
+    border-left: 2px solid $secondary-color;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 40px;
+      background: $secondary-color;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 40px;
+      background: $secondary-color;
+    }
+
+
+  }
+
+  &__titles-title {
+    font-size: 18px;
+    font-family: 'Poppins';
+
+  }
+
+  &__titles-subtitle {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &__social {
+  }
+
+  &__social-btn {
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    transform: translateY(101%);
+
+
+    &.active {
+      transform: translate(0);
+    }
+  }
+
+  &__social-button {
+  }
+
+  &__social-language {
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    transform: translateY(101%);
+
+
+    &.active {
+      transform: translate(0);
+    }
+  }
+
+  &__social-lng {
+  }
+
+  &__phone {
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    transform: translateY(101%);
+
+
+    &.active {
+      transform: translate(0);
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 8px;
+    // background: #000;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-bottom: 2px solid $main-color;
+      border-top: 2px solid $main-color;
+      width: 18px;
+      height: 14px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 2px;
+        background: $main-color;
+      }
+    }
+  }
+
+  &__nav {
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    transform: translateY(101%);
+
+
+    &.active {
+      transform: translate(0);
+    }
+  }
+
+  &__nav-list {
+  }
+
+  &__nav-item {
+  }
+}
